@@ -1,4 +1,4 @@
-# My PortFolio Page
+# My PortFolio Page - Responsive WEB
 
 [ViewSite](http://gabdong.dothome.co.kr)
 

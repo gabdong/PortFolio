@@ -1,0 +1,588 @@
+@charset "utf-8";
+.wrapper {
+    width: 100%;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+/* javascript event class */
+.menu_on {
+    left: 20% !important;
+}
+.scroll_animation {
+    opacity: 0;
+}
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade_in {
+    animation: fade_in 1.5s;
+    transition: all;
+}
+/* //javascript event class */
+
+/* 공통 css */
+.big_text {
+    font-size: 32px;
+    font-weight: bold;
+}
+.normal_text {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.get_button {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 20px;
+    transition: all .3s;
+}
+.get_button:hover {
+    background: #000;
+    color: #fff;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.title_number {
+    font-size: 20px;
+}
+/* //공통 css */
+
+/* mobile first */
+
+/* header */
+.header {
+    width: 100%;
+    height: 9.852216748768473%;
+    background: #fff;
+    opacity: 0.8;
+    /* position */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.header .logo {
+    font-size: 18px;
+    font-weight: bold;
+    /* position */
+    position: absolute;
+    left: 5.333333333333333%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header nav {
+    width: 80%;
+    height: 100vh;
+    background: #fff;
+    opacity: 0.8;
+    transition: left .3s;
+    /* position */
+    position: relative;
+    left: 100%;
+}
+.header nav ul {
+    /* position */
+    position: absolute;
+    left: 13.32666999833417%;
+    bottom: 15%;
+}
+.header nav li {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.header nav li:hover {
+    text-decoration: underline;
+}
+.header .mobile_ham {
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    /* position */
+    position: absolute;
+    right: 5.333333333333333%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header .mobile_ham span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    /* position */
+    position: absolute;
+}
+.header .mobile_ham span:nth-child(1) {
+    top: 0;
+}
+.header .mobile_ham span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header .mobile_ham span:nth-child(3) {
+    bottom: 0;
+}
+/* //header */
+
+/* top button */
+.top_button {
+    font-weight: bold;
+    /* position */
+    position: fixed;
+    right: 8%;
+    bottom: 8%;
+    z-index: 1;
+}
+/* //top button */
+
+/* contents */
+.contents {
+    width: 100%;
+    padding: 0 5.333333333333333%;
+}
+
+/* visual */
+.visual {
+    width: 100%;
+    height: 100vh;
+    /* position */
+    position: relative;
+}
+.visual .visual_text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.visual .visual_text .point {
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.visual .visual_text .normal_text {
+    margin: 18px 0 40px 0;
+}
+/* //visual */
+
+/* about */
+.about {
+    width: 100%;
+}
+.about .about_text .normal_text {
+    margin-bottom: 16px;
+}
+.about .about_text .skill_list {
+    margin-bottom: 60px;
+}
+.about .about_text .skill_list li {
+    width: 45%;
+    margin: 0 0 10px 5%;
+    list-style: square;
+    /* float */
+    float: left;
+}
+.about .about_img {
+    width: 100%;
+    height: 260px;
+    background: #eee;
+}
+/* //about */
+
+/* works */
+.works {
+    width: 100%;
+    margin-top: 80px;
+}
+.works .project {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+    /* position */
+    position: relative;
+}
+.works .project .project_img {
+    width: 100%;
+    height: 400px;
+    background: #eee;
+    /* position */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.works .project .project_info {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* position */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.works .project .project_info .project_kind {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+.works .project .project_info .project_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.works .project .project_info .project_text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+.works .project .project_info .project_languages {
+    width: 80%;
+    margin: 0 auto;
+}
+.works .project .project_info .project_languages li {
+    width: 33.33333333%;
+    font-size: 16px;
+    /* float */
+    float: left;
+}
+.works article:nth-child(4) .project_info .project_languages li {
+    width: 25%;
+}
+/* //works */
+
+/* contact */
+.contact {
+    width: 100%;
+    margin-top: 120px;
+    padding-bottom: 120px;
+}
+.contact .title {
+    text-align: center;
+}
+.contact .big_text {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact .contact_info {
+    text-align: center;
+    font-size: 18px;
+}
+.contact .contact_info li {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+/* //contact */
+
+/* //contents */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet mediaquery */
+@media screen and (min-width : 768px) {
+
+    /* 공통 css */
+    .big_text {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .normal_text {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .title_number {
+        font-size: 24px;
+    }
+    /* //공통 css */
+
+    /* header */
+    .header {
+        height: 8%;
+    }
+    .header .logo {
+        font-size: 24px;
+    }
+    .header nav {
+        width: 100%;
+        height: 100%;
+        background: none;
+        opacity: 1;
+        /* position */
+        position: relative;
+        left: initial;
+    }
+    .header nav .navigation {
+        width: auto;
+        /* position */
+        position: absolute;
+        left: initial;
+        bottom: initial;
+        right: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .header nav li {
+        font-size: 18px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        /* float */
+        float: left;
+    }
+    .header .mobile_ham {
+        display: none;
+    }
+    /* //header */
+
+    /* visual */
+    .visual .visual_text .big_text {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .visual .visual_text .point {
+        font-size: 20px;
+    }
+    .visual .visual_text .normal_text {
+        margin: 18px 0 50px 0;
+    }
+    /* //visual */
+
+        /* about */
+    .about {
+        width: 100%;
+        /* position */
+        position: relative;
+    }
+    .about .about_text {
+        width: 48%;
+    }
+    .about .about_img {
+        width: 48%;
+        height: 320px;
+        /* position */
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    /* //about */
+
+    /* works */
+    .works .project .project_img {
+        width: 100%;
+        height: 400px;
+        background: #eee;
+        /* position */
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .works .project .project_info {
+        width: 90%;
+        /* position */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .works .project .project_info .project_kind {
+        font-size: 18px;
+    }
+    .works .project .project_info .project_title {
+        font-size: 28px;
+    }
+    .works .project .project_info .project_text {
+        font-size: 18px;
+    }
+    .works .project .project_info .project_languages li {
+        font-size: 18px;
+    }
+    /* //works */
+
+    /* contact */
+    .contact .contact_info li {
+        font-size: 18px;
+    }
+    /* //contact */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pc mediaquery */
+@media screen and (min-width: 1320px) {
+
+    /* 공통 css */
+    .big_text {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .normal_text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .title_number {
+        font-size: 24px;
+    }
+    /* //공통 css */
+
+    /* header */
+    .header {
+        width: 90%;
+        height: 10%;
+        /* position */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header nav li {
+        font-size: 16px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        /* float */
+        float: left;
+    }
+    .header .mobile_ham {
+        display: none;
+    }
+    /* //header */
+
+    .contents {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* visual */
+    .visual {
+        width: 100%;
+    }
+    .visual .visual_text .point {
+        margin-bottom: 10px;
+    }
+    .visual .visual_text .big_text {
+        font-size: 56px;
+    }
+    .visual .visual_text .normal_text {
+        width: 600px;
+    }
+    /* //visual */
+
+    /* about */
+    .about {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* //about */
+
+    /* works */
+    .works {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 140px;
+    }
+    .works .title {
+        margin-bottom: 60px;
+    }
+    .works .project {
+        margin-bottom: 80px;
+    }
+    .works .project .project_img {
+        width: 70%;
+        height: 400px;
+        background: #eee;
+        /* position */
+        position: absolute;
+        left: initial;
+        top: 0;
+    }
+    .works .project .project_info {
+        width: 80%;
+        /* position */
+        position: absolute;
+        left: initial;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .works .project .project_info .project_kind {
+        font-size: 16px;
+    }
+    .works .project .project_info .project_title {
+        font-size: 24px;
+    }
+    .works .project .project_info .project_text {
+        font-size: 16px;
+    }
+    .works .project .project_info .project_languages {
+        width: 300px;
+        /* position */
+        position: absolute;
+    }
+    .works .project .project_info .project_languages li {
+        font-size: 16px;
+    }
+    /* img position */
+    .works .img_left .project_img {
+        left: 0;
+    }
+    .works .img_right .project_img {
+        right: 0;
+        top: 0;
+    }
+    .works .img_left .project_info {
+        text-align: right;
+        right: 0;
+    }
+    .works .img_right .project_info {
+        text-align: left;
+        left: 0;
+    }
+    .works .img_left .project_info .project_languages {
+        right: 0;
+    }
+    /* //img position */
+    /* //works */
+
+    /* contact */
+    .contact {
+        margin-top: 200px;
+        padding-bottom: 200px;
+    }
+    .contact .contact_info li {
+        font-size: 18px;
+    }
+    /* //contact */
+}

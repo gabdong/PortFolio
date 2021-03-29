@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head lang="ko">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,31 +16,33 @@
         <div class="wrapper">
             <div class="top"></div>
             <!-- header -->
-            <header class="header">
-
-                <!-- logo -->
-                <h1 class="logo">DongHwan's PortFolio</h1>
-                <!-- //logo -->
-
-                <!-- navigation -->
-                <nav>
-                    <ul class="navigation cf">
-                        <li><a href="javascript:void(0)" class="nav_btn" id="about">About</a></li>
-                        <li><a href="javascript:void(0)" class="nav_btn" id="works">Works</a></li>
-                        <li><a href="javascript:void(0)" class="nav_btn mr0" id="contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <!-- //navigation -->
-
-                <!-- mobile_navigation -->
-                <span class="mobile_ham">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-                <!-- //mobile_navigation -->
-
-            </header>        
+            <div class="header_wrapper">
+                <header class="header">
+                
+                    <!-- logo -->
+                    <h1 class="logo">DongHwan's PortFolio</h1>
+                    <!-- //logo -->
+                
+                    <!-- navigation -->
+                    <nav>
+                        <ul class="navigation cf">
+                            <li><a href="javascript:void(0)" class="nav_btn" id="about">About</a></li>
+                            <li><a href="javascript:void(0)" class="nav_btn" id="works">Works</a></li>
+                            <li><a href="javascript:void(0)" class="nav_btn mr0" id="contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- //navigation -->
+                
+                    <!-- mobile_navigation -->
+                    <span class="mobile_ham">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <!-- //mobile_navigation -->
+                
+                </header>
+            </div>        
             <!-- //header -->
 
             <!-- top button -->
@@ -95,39 +97,45 @@
                         </ul>
                     </div>
 
-                    <div class="about_img scroll_animation"></div>
+                    <div class="about_img scroll_animation">
+                        <img src="./images/myimage.png" alt="my image">
+                    </div>
 
-                </section class="about">
+                </section>
                 <!-- //about -->
 
                 <!-- works -->
                 <section class="works">
                     
-                    <h2 class="title scroll_animation"><span class="title_number">02.</span> Works</h2>
+                    <h2 class="title scroll_animation"><span class="title_number">02.</span> Works - GitHub README의 View Site를 통해 사이트 확인이 가능합니다.</h2>
                     
                     <!-- project -->
                     <article class="project img_left scroll_animation">
-                        <a href="http://gabdong.dothome.co.kr/" target="__blank">
-                            <div class="project_img"></div>
+                        <a href="http://github.com/gabdong/PortFolio" target="_blank">
+                            <div class="project_img">
+                                <img src="./images/portfolio.png" alt="portfolio image">
+                            </div>
                             <div class="project_info">
-                                <p class="project_kind">
-                                    PortFolio
-                                </p>
-                                <h3 class="project_title">
-                                    My PortFolio
-                                </h3>
-                                <p class="project_text">
-                                    현재 보고계신 저의 포트폴리오 사이트입니다.
-                                    <br>
-                                    미디어쿼리를 이용하여 반응형으로 제작하였으며, 플러그인을 사용하지 않고 Vanilla Js를 이용하여
-                                    <br>
-                                    부드러운 스크롤, 스크롤시 Fade In 이벤트를 구현하였습니다.
-                                </p>
-                                <ul class="project_languages">
-                                    <li>Vanilla Js</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
+                                <div class="project_info_text">
+                                    <p class="project_kind">
+                                        PortFolio
+                                    </p>
+                                    <h3 class="project_title">
+                                        My PortFolio
+                                    </h3>
+                                    <p class="project_text">
+                                        현재 보고계신 저의 포트폴리오 사이트입니다.
+                                        <br>
+                                        미디어쿼리를 이용하여 반응형으로 제작하였으며, 플러그인을 사용하지 않고 Vanilla Js를 이용하여
+                                        <br>
+                                        부드러운 스크롤, 스크롤시 Fade In 이벤트를 구현하였습니다.
+                                    </p>
+                                    <ul class="project_languages">
+                                        <li>Vanilla Js</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </article>
@@ -135,25 +143,29 @@
 
                     <!-- project -->
                     <article class="project img_right scroll_animation">
-                        <a href="http://gabdong.dothome.co.kr/kakaoinvestment" target="__blank">
-                            <div class="project_img"></div>
+                        <a href="http://github.com/gabdong/kakaoinvestment" target="_blank">
+                            <div class="project_img">
+                                <img src="./images/kakaoinvestment.png" alt="kakao investment image">
+                            </div>
                             <div class="project_info">
-                                <p class="project_kind">
-                                    Clone Coding
-                                </p>
-                                <h3 class="project_title">
-                                    KaKao Investment
-                                </h3>
-                                <p class="project_text">
-                                    KaKao Investment의 기존 홈페이지를 클론코딩 하였습니다.
-                                    <br>
-                                    모든 동적효과를 Vanilla Js를 이용하여 구현하였습니다.
-                                </p>
-                                <ul class="project_languages">
-                                    <li>Vanilla Js</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
+                                <div class="project_info_text">
+                                    <p class="project_kind">
+                                        Clone Coding
+                                    </p>
+                                    <h3 class="project_title">
+                                        KaKao Investment
+                                    </h3>
+                                    <p class="project_text">
+                                        KaKao Investment의 기존 홈페이지를 클론코딩 하였습니다.
+                                        <br>
+                                        모든 동적효과를 Vanilla Js를 이용하여 구현하였습니다.
+                                    </p>
+                                    <ul class="project_languages">
+                                        <li>Vanilla Js</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </article>
@@ -161,28 +173,32 @@
 
                     <!-- project -->
                     <article class="project img_left scroll_animation">
-                        <a href="http://gabdong.dothome.co.kr/glowseoul" target="__blank">
-                            <div class="project_img"></div>
+                        <a href="http://github.com/gabdong/glowseoul" target="_blank">
+                            <div class="project_img">
+                                <img src="./images/glowseoul.png" alt="glowsoeul image">
+                            </div>
                             <div class="project_info">
-                                <p class="project_kind">
-                                    React Router
-                                </p>
-                                <h3 class="project_title">
-                                    GlowSeoul
-                                </h3>
-                                <p class="project_text">
-                                    GlowSeoul의 홈페이지를 클론코딩하였습니다.
-                                    <br>
-                                    React의 React Router Dom 패키지를 이용하였고 헤더, 컨텐츠, 푸터별로 컴포넌트를 제작하여 화면전환시 새로고침없는 SPA를 제작하였습니다.
-                                    <br>
-                                    페이지 내의 슬라이더, 헤더변경등 동적효과는 Vanilla Js로 구현하였습니다.
-                                </p>
-                                <ul class="project_languages">
-                                    <li>React</li>
-                                    <li>Vanilla Js</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
+                                <div class="project_info_text">
+                                    <p class="project_kind">
+                                        React Router
+                                    </p>
+                                    <h3 class="project_title">
+                                        GlowSeoul
+                                    </h3>
+                                    <p class="project_text">
+                                        GlowSeoul의 홈페이지를 클론코딩하였습니다.
+                                        <br>
+                                        React의 React Router Dom 패키지를 이용하였고 헤더, 컨텐츠, 푸터별로 컴포넌트를 제작하여 화면전환시 새로고침없는 SPA를 제작하였습니다.
+                                        <br>
+                                        페이지 내의 슬라이더, 헤더변경등 동적효과는 Vanilla Js로 구현하였습니다.
+                                    </p>
+                                    <ul class="project_languages">
+                                        <li>React</li>
+                                        <li>Vanilla Js</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </article>
@@ -190,27 +206,31 @@
                     
                     <!-- project -->
                     <article class="project img_right scroll_animation">
-                        <a href="http://gabdong.dothome.co.kr/converse" target="__blank">
-                            <div class="project_img"></div>
+                        <a href="http://github.com/gabdong/converse" target="_blank">
+                            <div class="project_img">
+                                <img src="./images/converse.png" alt="converse image">
+                            </div>
                             <div class="project_info">
-                                <p class="project_kind">
-                                    Responsive WEB
-                                </p>
-                                <h3 class="project_title">
-                                    CONVERSE
-                                </h3>
-                                <p class="project_text">
-                                    CONVERSE의 홈페이지를 반응형으로 제작하였습니다.
-                                    <br>
-                                    미디어쿼리를 이용하여 반응형으로 제작하였고, 제이쿼리 프러그인을 이용해 슬라이더를
-                                    <br>
-                                    구현하였습니다.
-                                </p>
-                                <ul class="project_languages">
-                                    <li>jQuery</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
+                                <div class="project_info_text">
+                                    <p class="project_kind">
+                                        Responsive WEB
+                                    </p>
+                                    <h3 class="project_title">
+                                        CONVERSE
+                                    </h3>
+                                    <p class="project_text">
+                                        CONVERSE의 홈페이지를 반응형으로 제작하였습니다.
+                                        <br>
+                                        미디어쿼리를 이용하여 반응형으로 제작하였고, 제이쿼리 플러그인을 이용해 슬라이더를
+                                        <br>
+                                        구현하였습니다.
+                                    </p>
+                                    <ul class="project_languages">
+                                        <li>jQuery</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </article>
@@ -218,27 +238,31 @@
                     
                     <!-- project -->
                     <article class="project img_left scroll_animation">
-                        <a href="http://gabdong.dothome.co.kr/levis" target="__blank">
-                            <div class="project_img"></div>
+                        <a href="http://github.com/gabdong/levis" target="_blank">
+                            <div class="project_img">
+                                <img src="./images/levis.png" alt="levis image">
+                            </div>
                             <div class="project_info">
-                                <p class="project_kind">
-                                    Responsive WEB
-                                </p>
-                                <h3 class="project_title">
-                                    LEVIS
-                                </h3>
-                                <p class="project_text">
-                                    LEVIS의 홈페이지를 반응형으로 제작하였습니다.
-                                    <br>
-                                    미디어쿼리를 이용하여 반응형으로 제작하였으며, 제이쿼리 플러그인을 이용해 슬라이더를
-                                    <br>
-                                    구현하였습니다.
-                                </p>
-                                <ul class="project_languages">
-                                    <li>jQuery</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
+                                <div class="project_info_text">
+                                    <p class="project_kind">
+                                        Responsive WEB
+                                    </p>
+                                    <h3 class="project_title">
+                                        LEVIS
+                                    </h3>
+                                    <p class="project_text">
+                                        LEVIS의 홈페이지를 반응형으로 제작하였습니다.
+                                        <br>
+                                        미디어쿼리를 이용하여 반응형으로 제작하였으며, 제이쿼리 플러그인을 이용해 슬라이더를
+                                        <br>
+                                        구현하였습니다.
+                                    </p>
+                                    <ul class="project_languages">
+                                        <li>jQuery</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </article>
@@ -246,25 +270,29 @@
 
                     <!-- project -->
                     <article class="project img_right scroll_animation">
-                       <a href="http://gabdong.dothome.co.kr/nasa" target="__blank">
-                            <div class="project_img"></div>
+                       <a href="http://github.com/gabdong/nasa" target="_blank">
+                            <div class="project_img">
+                                <img src="./images/nasa.png" alt="nasa image">
+                            </div>
                             <div class="project_info">
-                                <p class="project_kind">
-                                    Event Page
-                                </p>
-                                <h3 class="project_title">
-                                    NASA
-                                </h3>
-                                <p class="project_text">
-                                    NASA의 이벤트 페이지입니다.
-                                    <br>
-                                    제이쿼리를 이용하여 버튼클릭시 배경화면이 제어되는 홈페이지를 제작하였습니다.
-                                </p>
-                                <ul class="project_languages">
-                                    <li>jQuery</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
+                                <div class="project_info_text">
+                                    <p class="project_kind">
+                                        Event Page
+                                    </p>
+                                    <h3 class="project_title">
+                                        NASA
+                                    </h3>
+                                    <p class="project_text">
+                                        NASA의 이벤트 페이지입니다.
+                                        <br>
+                                        제이쿼리를 이용하여 버튼클릭시 배경화면이 제어되는 홈페이지를 제작하였습니다.
+                                    </p>
+                                    <ul class="project_languages">
+                                        <li>jQuery</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
                             </div>
                        </a>
                     </article>
@@ -272,31 +300,35 @@
                     
                     <!-- project -->
                     <article class="project img_left scroll_animation">
-                        <a href="http://gabdong.dothome.co.kr/louisvuitton" target="__blank">
-                            <div class="project_img"></div>
+                        <a href="http://github.com/gabdong/louisvuitton" target="_blank">
+                            <div class="project_img">
+                                <img src="./images/louisvuitton.png" alt="louis vuitton image">
+                            </div>
                             <div class="project_info">
-                                <p class="project_kind">
-                                    Event Page
-                                </p>
-                                <h3 class="project_title">
-                                    Louis Vuitton
-                                </h3>
-                                <p class="project_text">
-                                    Louis Vuitton의 이벤트 페이지입니다.
-                                    <br>
-                                    메뉴 호버시 div넓이 변화와 배경동영상이 재생되며 제이쿼리를 이용하여 구현하였습니다.
-                                </p>
-                                <ul class="project_languages cf">
-                                    <li>jQuery</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
+                                <div class="project_info_text">
+                                    <p class="project_kind">
+                                        Event Page
+                                    </p>
+                                    <h3 class="project_title">
+                                        Louis Vuitton
+                                    </h3>
+                                    <p class="project_text">
+                                        Louis Vuitton의 이벤트 페이지입니다.
+                                        <br>
+                                        메뉴 호버시 div넓이 변화와 배경동영상이 재생되며 제이쿼리를 이용하여 구현하였습니다.
+                                    </p>
+                                    <ul class="project_languages cf">
+                                        <li>jQuery</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
                             </div>
                         </a>
                     </article>
                     <!-- //project -->
 
-                </section class="works">
+                </section>
                 <!-- //works -->
 
                 <!-- contact -->
@@ -305,7 +337,7 @@
                     <h2 class="title scroll_animation">Contact</h2>
 
                     <h3 class="big_text scroll_animation">
-                        Thank you for watcing my Portfolio
+                        Thank you for watching my Portfolio
                     </h3>
 
                     <ul class="contact_info scroll_animation">
@@ -317,7 +349,6 @@
 
             </div>
             <!-- //contents --> 
-
         </div>
     </body>
 </html>

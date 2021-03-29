@@ -3,6 +3,10 @@
     width: 100%;
     font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 }
+body {
+    background: linear-gradient(#E1DAD4, #EAEAEA);
+    color: #2E1D1E;
+}
 /* javascript event class */
 .menu_on {
     left: 20% !important;
@@ -36,12 +40,12 @@
 .get_button {
     padding: 10px 20px;
     font-weight: bold;
-    border: 1px solid #000;
+    border: 1px solid #2E1D1E;
     border-radius: 20px;
     transition: all .3s;
 }
 .get_button:hover {
-    background: #000;
+    background: #2E1D1E;
     color: #fff;
 }
 .title {
@@ -57,16 +61,25 @@
 /* mobile first */
 
 /* header */
-.header {
+.header_wrapper {
     width: 100%;
     height: 9.852216748768473%;
-    background: #fff;
-    opacity: 0.8;
+    background: #2E1D1E;
+    opacity: 1;
     /* position */
     position: fixed;
     left: 0;
     top: 0;
     z-index: 1;
+}
+.header {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    /* position */
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .header .logo {
     font-size: 18px;
@@ -115,7 +128,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #2E1D1E;
     /* position */
     position: absolute;
 }
@@ -191,6 +204,17 @@
     width: 100%;
     height: 260px;
     background: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0.8;
+    transition: opacity .3s;
+}
+.about .about_img:hover {
+    opacity: 1;
+}
+.about .about_img img {
+    width: 100%;
+    height: 100%;
 }
 /* //about */
 
@@ -215,15 +239,38 @@
     left: 0;
     top: 0;
 }
-.works .project .project_info {
+.works .project .project_img img {
     width: 100%;
-    height: auto;
-    text-align: center;
+    height: 100%;
+    opacity: 0.6;
     /* position */
     position: absolute;
     left: 0;
+    top: 0;
+}
+.works .project a:hover>.project_info {
+    opacity: 1;
+}
+.works .project .project_info {
+    width: 100%;
+    height: 100%;
+    background: #2E1D1E;
+    opacity: 0.8;
+    padding-top: 80px;
+    color: #fff;
+    text-align: center;
+    transition: all .5s;
+    /* position */
+    position: absolute;
+    left: 0;
+}
+.works .project .project_info_text {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
 }
 .works .project .project_info .project_kind {
     font-size: 18px;
@@ -316,7 +363,7 @@
     /* //공통 css */
 
     /* header */
-    .header {
+    .header_wrapper {
         height: 8%;
     }
     .header .logo {
@@ -397,7 +444,7 @@
         top: 0;
     }
     .works .project .project_info {
-        width: 90%;
+        width: 100%;
         /* position */
         position: absolute;
         left: 50%;
@@ -462,9 +509,11 @@
     /* //공통 css */
 
     /* header */
+    .header_wrapper {
+        height: 10%;
+    }
     .header {
         width: 90%;
-        height: 10%;
         /* position */
         left: 50%;
         transform: translateX(-50%);
@@ -531,6 +580,9 @@
     }
     .works .project .project_info {
         width: 80%;
+        height: 340px;
+        padding: 60px;
+        border-radius: 20px;
         /* position */
         position: absolute;
         left: initial;
@@ -571,7 +623,7 @@
         left: 0;
     }
     .works .img_left .project_info .project_languages {
-        right: 0;
+        right: 00px;
     }
     /* //img position */
     /* //works */
